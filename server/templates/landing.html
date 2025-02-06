@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="">
+
+        <div>
+            <h1 class="ml-[50%] text-[35px] text-gray-600 ">Note App</h1>
+        </div>
+
+        <div class="flex justify-between mt-[150px] ml-[20px]">
+            <div class="pl-[30px ml-[350px]  ]">
+                <button class="w-[150px] sm:flex-1 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                       <a href="{% url 'login' %}">Login</a>
+                </button>
+            </div>
+    
+            <div class="mr-[500px]">
+                <button class="w-[150px] sm:flex-1 py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                       <a href="{% url 'signup' %}">signup</a>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

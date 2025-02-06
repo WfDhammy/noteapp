@@ -1,0 +1,32 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Edit Page</title>
+</head>
+<body>
+    <div class="w-full max-w-lg min-h-screen">
+        <h2 class="text-2xl font-bold mb-4">Edit Page</h2>
+        <p class="ml-4">Title</p>
+        <textarea class="w-full h-12 ml-4 p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Type your title here...">{{ note.title|default:'' }}</textarea>
+        <p class="ml-4 mt-4">Content</p>
+
+        
+        <textarea class="w-full h-48 ml-4 p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Type your notes here...">{{ note.content|default:'' }}</textarea>
+
+       
+        <button class="mt-4 ml-2 px-4 py-2 border-2 border-blue-500 text-blue-500 rounded-md hover:bg-blue-500 hover:text-white">  
+            <a href="note.html">Back to My Notes </a>
+       </button>  
+       <button class="mt-2 p-[30px] px-4 py-2 border-2 border-blue-500 text-blue-500 rounded-md hover:bg-blue-500 hover:text-white">Ok</button>
+    
+    </div>
+
+    
+    
+    
+</body>
+</html>
