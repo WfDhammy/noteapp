@@ -69,7 +69,7 @@ def create_note(request):
         note = Note.objects.create(title=title, content=content, user=user)
         note.save()
         print("note created")
-        return redirect('note_list') 
+        return redirect('note_list', note_id=note.id) 
     return render(request, 'note.html')
 
 @login_required
